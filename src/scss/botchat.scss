@@ -811,3 +811,28 @@
             @include link-and-svg-arrow($c01, 0.6);
         }
     }
+    
+    :root{
+        --botImage: url('');
+        --botUserImage: url('');
+
+        --topoFundo:#6FBAB3;
+        --topoTexto:#ffffff;
+      
+    }
+
+    .botImage-bot {
+        content: var(--botImage);
+        float: left !important;
+        border-radius: 50%;
+        height: 39px !important;
+        width: 39px !important;
+    }
+
+    .botImage-me {
+        content: var(--botUserImage);
+        float: right !important;
+        border-radius: 50%;
+        height: 39px !important;
+        width: 39px !important;
+    }

@@ -14,7 +14,8 @@
         "skipLibCheck": true,
         "sourceMap": true,
         "inlineSources": true,
-        "strictNullChecks": false
+        "strictNullChecks": false,
+        "charset": "utf8"
     },
     "files": [
         "src/adaptivecards-hostconfig.d.ts",
