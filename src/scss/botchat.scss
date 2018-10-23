@@ -813,16 +813,17 @@
     }
     
     :root{
-        --botImage: url('');
-        --botUserImage: url('');
-
+        --botImage: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReoZCYjv91kfIUkY7x4_YZZPC-DFfrj1hR7cBEkz5vqmZ_iqaklQ");
+        --botUserImage: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReoZCYjv91kfIUkY7x4_YZZPC-DFfrj1hR7cBEkz5vqmZ_iqaklQ");
         --topoFundo:#6FBAB3;
         --topoTexto:#ffffff;
-      
     }
 
     .botImage-bot {
-        content: var(--botImage);
+        content: '';
+        background-size: contain;
+        background-position: center center;
+        background-image: var(--botImage) !important;
         float: left !important;
         border-radius: 50%;
         height: 39px !important;
@@ -830,7 +831,10 @@
     }
 
     .botImage-me {
-        content: var(--botUserImage);
+        content: '';
+        background-size: contain;
+        background-position: center center;
+        background-image: var(--botUserImage) !important;
         float: right !important;
         border-radius: 50%;
         height: 39px !important;
